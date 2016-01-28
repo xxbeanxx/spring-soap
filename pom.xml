@@ -1,0 +1,117 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.github.xxbeanxx</groupId>
+	<artifactId>spring-soap</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+
+	<name>Spring SOAP Example</name>
+	<description>A simple Spring driven SOAP example.</description>
+	<url>https://github.com/xxbeanxx/spring-soap</url>
+	
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://opensource.org/licenses/MIT</url>
+		</license>
+	</licenses>
+	
+
+	<issueManagement>
+		<url>https://github.com/xxbeanxx/spring-soap/issues</url>
+		<system>GitHub Issue Tracker</system>
+	</issueManagement>
+
+
+	<scm>
+		<url>https://github.com/xxbeanxx/spring-soap</url>
+		<connection>scm:git:git://github.com/xxbeanxx/spring-soap.git</connection>
+		<developerConnection>scm:git:git@github.com:xxbeanxx/spring-soap.git</developerConnection>
+	</scm>
+
+
+	<developers>
+		<developer>
+			<id>xxbeanxx</id>
+			<name>Greg Baker</name>
+			<email>greg.baker.bsc@gmail.com</email>
+			<url>https://github.com/xxbeanxx</url>
+		</developer>
+	</developers>
+
+
+	<properties>
+		<java.version>1.7</java.version>
+		<slf4j.version>1.7.12</slf4j.version>
+		<spring.version>4.2.2.RELEASE</spring.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+
+	<dependencies>
+
+		<!-- =============================================================== -->
+		<!--         Spring 4.x                                              -->
+		<!-- =============================================================== -->
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- =============================================================== -->
+		<!--         SLF4j                                                   -->
+		<!-- =============================================================== -->
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+		
+</project>
